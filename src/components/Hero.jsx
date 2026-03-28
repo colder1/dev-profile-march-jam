@@ -11,7 +11,7 @@ const Hero = () => {
         stunning web experiences that live at the intersection of design and
         data.
       </p>
-      <div className='brn-container'>
+      <div className='btn-container'>
         <button className='btn'> 
           
           View Projects</button>
