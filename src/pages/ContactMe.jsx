@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 
 const Contactme = () => {
   const [form, setForm] = useState({
@@ -16,6 +17,20 @@ const Contactme = () => {
     }));
     console.log(form);
   };
+
+  const handleSendemail = async(e) => {
+    e.preventdefault();
+    const data = await fetch('/api/server', {
+        method: 'POST',
+         headers: {'Content-Type': 'applicate/json'},
+         body: JSON.stringify({
+            name: form.name,
+            email: form.email,
+            message:form.message,
+         }),
+    });
+
+  }
 
   return (
     <div>
@@ -45,27 +60,19 @@ const Contactme = () => {
             onChange={handleOnchange}
           />
         </div>
-        <button style={{ width: '140px', height: '40px' }}>Contact Me</button>
+        <button onClick={handleSendemail} style={{ width: '140px', height: '40px' }}>Contact Me</button>
       </div>
-      <button>Go Back</button>
+      <button >
+
+        <p>
+                 <Link to= "/" > Go back</Link>
+            </p>
+
+
+      </button>
+
     </div>
   );
 };
-
-  const handleSendEmail = async (e) => {
-    e.preventDefault();
-    const data = await fetch('/api/server', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: form.name,
-        email: form.email,
-        message: form.message,
-      }),
-    });
-
-    const res = await data.json();
-    console.log(res);
-  };
 
 export default Contactme;
