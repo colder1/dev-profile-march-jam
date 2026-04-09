@@ -1,16 +1,45 @@
-# React + Vite
+# Marcial Becerra – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend-focused portfolio showcasing projects, skills, and a functional contact system built with React and deployed on Vercel.
 
-Currently, two official plugins are available:
+## Live Demo
+https://marcial-portfolio-mfpuwzr1d-marcialbr1820-1892s-projects.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive and modern UI built with React + Vite  
+- Projects section with real implementations  
+- About Me section with technical focus  
+- Functional contact form (sends real emails)  
+- Serverless backend using Vercel Functions  
+- Email integration using Resend API  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend:** React, JavaScript, CSS  
+- **Build Tool:** Vite  
+- **Backend:** Vercel Serverless Functions  
+- **Email Service:** Resend  
+- **Version Control:** Git & GitHub  
+
+---
+
+## Contact Functionality
+
+The contact form sends messages directly to my email using a secure backend API.
+
+- No API keys are exposed on the frontend  
+- Requests are handled via `/api/server`  
+- Emails are sent using Resend  
+
+---
+
+## Installation (Local)
+
+```bash
+npm install
+npm run dev
