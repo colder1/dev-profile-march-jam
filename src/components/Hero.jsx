@@ -6,20 +6,27 @@ const Hero = () => {
     
     <div>
       <p className="main-text">
-        Architecting <span className='secondary-text'>Digital Artifacts</span>
-      </p>
+        Marcial Becerra
+        <p className='secondary-text'>
+          Software Engineer
+        </p>
+      </p>   
+
       <p className='description-text '>
-        Full-stack developer specializing in building high-performance, visually
-        stunning web experiences that live at the intersection of design and
-        data.
+        Frontend-focused engineer who enjoys building modern, responsive interfaces with React and TypeScript. I like turning ideas into clean, efficient, and scalable solutions, with a strong foundation in data structures and problem-solving.     
       </p>
       
       <div className='btn-container'>
         <button className='btn'> 
             <Link to= "/Projects">View Projects</Link>
         </button>
-        <button className='btn'> 
-            <Link to= "/Aboutme">About Me</Link>
+        <button 
+          className='btn'> 
+          <a href="/Marcial_Becerra_Resume.pdf"
+          target='blank'
+          rel="noopener noreferrer">
+              View Resume
+          </a>
         </button>
         
       </div>

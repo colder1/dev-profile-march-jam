@@ -9,16 +9,12 @@ const Navbar = ({children}) => {
             <div className="container-navbar">
                 <div className="links">
                     <p>
-                        <Link to="/home">Home</Link>
-
-                    </p>
+                        <Link to="/Projects">Projects</Link>
+                    </p> 
                     <p>
                         <Link to="/Aboutme">About Me</Link>
 
                     </p>
-                    <p>
-                        <Link to="/Projects">Projects</Link>
-                    </p> 
                     <p>
                         <Link to="/ContactMe">Contact Me</Link>
                     

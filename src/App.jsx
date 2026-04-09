@@ -7,7 +7,6 @@ function App() {
   const [cout, setCount] = useState(0)
   return (
     <>
-      <h1>hola mundo</h1>
       <Navbar>
         <Hero />
       </Navbar>

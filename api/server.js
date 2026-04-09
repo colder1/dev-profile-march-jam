@@ -11,16 +11,20 @@ const handler = async (req, res) => {
     const { name, message, email } = req.body;
 
     const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: 'davidsnhr@tec.mx',
-      subject: 'hello world',
-      html: `<strong>it works!</strong>
-      <strong>${message}</strong>`,
+      from: 'Portfolio <onboarding@resend.dev>',
+      to: 'marcialbr1820@gmail.com',
+      subject: `New message from ${name}`,
+      html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
     });
 
-    return res.status(200).json({ data });
+    return res.status(200).json({ success: true, data });
   } catch (error) {
-    return res.status(502).json({ error });
+    return res.status(500).json({ success: false, error });
   }
 };
 
