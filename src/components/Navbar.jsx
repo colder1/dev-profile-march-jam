@@ -9,6 +9,9 @@ const Navbar = ({children}) => {
             <div className="container-navbar">
                 <div className="links">
                     <p>
+                        <Link to="/Home">Home</Link>
+                    </p> 
+                    <p>
                         <Link to="/Projects">Projects</Link>
                     </p> 
                     <p>

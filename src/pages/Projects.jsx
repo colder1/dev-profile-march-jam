@@ -25,10 +25,6 @@ const Projects = () => {
             <li>Relational database design</li>
             <li>Automated alert system</li>
           </ul>
-
-          <div className="project-buttons">
-            <button className="btn">View Code</button>
-          </div>
         </div>
 
         <div className="project-card">
@@ -46,10 +42,6 @@ const Projects = () => {
             <li>Routing improvements</li>
             <li>Git collaboration workflows</li>
           </ul>
-
-          <div className="project-buttons">
-            <button className="btn">View Code</button>
-          </div>
         </div>
 
 
@@ -68,10 +60,6 @@ const Projects = () => {
             <li>DFS connectivity analysis</li>
             <li>Eulerian path validation</li>
           </ul>
-
-          <div className="project-buttons">
-            <button className="btn">View Code</button>
-          </div>
         </div>
 
         <div className="project-card">
@@ -89,10 +77,6 @@ const Projects = () => {
             <li>Persistent file storage</li>
             <li>Dynamic filtering system</li>
           </ul>
-
-          <div className="project-buttons">
-            <button className="btn">View Code</button>
-          </div>
         </div>
 
       </div>
